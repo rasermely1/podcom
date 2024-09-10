@@ -11,15 +11,15 @@ def remove_files_in_folder(folder_path):
         os.remove(file_path)
 
 
-# def text_to_pdf(documents_to_convert):
-#         for filename in os.listdir(documents_to_convert):
-#             if filename.endswith('.docx'):
-#                 pdf_filename = f"{filename[:-5]}.pdf"
-#                 converting_path = os.path.join(documents_to_convert, pdf_filename)
-#                 print(f"this is the converting path: {converting_path}")
-#                 convert(converting_path)
-#                 print(f"Converted {filename}")
-#         # remove_files_in_folder(documents_to_convert)
+def text_to_pdf(documents_to_convert):
+        for filename in os.listdir(documents_to_convert):
+            if filename.endswith('.docx'):
+                pdf_filename = f"{filename[:-5]}.pdf"
+                converting_path = os.path.join(documents_to_convert, pdf_filename)
+                print(f"this is the converting path: {converting_path}")
+                convert(converting_path)
+                print(f"Converted {filename}")
+        # remove_files_in_folder(documents_to_convert)
 
 
 def convert_to_images(input_pdf_documents, output_image_documents):
